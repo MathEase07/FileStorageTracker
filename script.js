@@ -122,7 +122,7 @@ document.getElementById('submit-login').addEventListener('click', () => {
     return;
   }
   
-  const storedAccount = JSON.parse(localStorage.getItem(ACCOUNT_KEY) || '{"username":"MPDC","password":"MPDC2026"}');
+  const storedAccount = JSON.parse(localStorage.getItem(ACCOUNT_KEY) || '{"username":"user","password":"password"}');
   
   if (username === storedAccount.username && password === storedAccount.password) {
     currentUser = username;
@@ -572,3 +572,4 @@ window.addEventListener('load', () => {
   setupEventListeners();
   showSection('hero');
 });
+
